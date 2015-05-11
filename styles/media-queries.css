@@ -1,0 +1,283 @@
+@charset "UTF-8";
+/* CSS Document */
+
+@media screen and (min-width: 911px) {  /* BEGIN DESKTOP */
+	#nav-tog-main {
+		display: none;
+	}
+	
+	a.go-link {
+		display: none;
+	}
+	
+}					/* END DESKTOP */
+
+@media screen and (max-width: 910px) and (min-width: 570px) {    /* BEGIN TABLET */
+
+	html {
+		background: #FFFFFF;	/*white*/
+	}
+
+	header {
+		background: #FFFFFF url(../images/bg-mtn-tablet.jpg) no-repeat center top;
+		background-size: cover;
+		padding-bottom: 1.25em;
+	}
+	
+	#middle {
+		background-color: #76A690;	/*river*/
+		padding-top: 2.5em;
+	}
+	
+	#content {
+		padding: 0;
+	}
+	
+	.menu {
+		float: left;
+		margin: 1.25em 0 0;
+		width: 100%;
+	}
+	
+	img.logo {
+		width: 220px; /* fixed size */
+		display: block;
+		clear: both;
+		float: none;
+		margin: 0px auto;
+	}
+	
+	#nav-tog-main {
+		display: none;
+	}
+	
+	#nav-home {
+		margin: 0 auto;
+	}
+	
+	#nav-home ul {
+		padding: 0;
+	}
+	
+	#nav-home li {
+		width: 50%;
+		padding: 10px;
+		padding: .625em .625rem;
+	}
+	
+	.menu a {
+		font-size: 1em;
+	}
+	
+	.menu a:link,
+	.menu a:visited {
+		color: #99B9AB;	/*icyriver*/
+	}
+	
+	.menu a.main-on,
+	.menu a:hover,
+	.menu a:focus {
+		color: #FFFFFF;	/*white*/
+		text-decoration: none;
+	}
+	
+	footer {
+		opacity: 1;
+	}	
+	
+}						/* END TABLET */
+
+
+@media screen and (max-width: 569px) {			/* BEGIN PHONE */		
+
+	html {
+		background: #FFFFFF;	/*white*/
+	}
+
+	header {
+	background: #FFFFFF url(../images/bg-mtn-mobile.jpg) no-repeat center top;
+	background-size: cover;
+	padding: 40px 10px 10px; /* fallback */
+	padding: 2.5em .625rem .625em; /* 10 / 16 = rems */
+	}
+	
+	#middle {
+		padding: 0;
+		background-color: #99B9AB;	/*icyriver*/
+	}
+	
+	#content,
+	#primary {
+		display: block;
+		float: none;
+		width: 100%;
+		margin: 0 auto;
+	}
+	
+	#primary {
+	padding: 20px 20px; /* fallback */
+	padding: 1.25em 1.25rem; /* 20 / 16 = rems */
+	overflow: hidden;
+	background-color: #99B9AB;	/*icyriver*/
+	}
+
+/* RESPONSIVE TOGGLE MAIN MENU */
+	
+	#nav-tog-main {
+		color: #FFFFFF;	/*white*/
+	}
+	
+	#nav-tog-main ul {
+		display: none;
+		list-style: none;
+		margin: 0;
+		padding: 0;
+		text-align: right;
+	}
+	
+	#nav-tog-main ul.expanded {		/*java-script will add this class to your tag*/
+			display: block;
+			width: 120px;
+			float: right;
+			clear: both;
+			margin-bottom: 1.25em;
+	}
+	
+	#nav-tog-main li {
+		margin: 0;
+	}
+		
+	#nav-tog-main li a:link,
+	#nav-tog-main li a:visited {	
+		display: block;
+		padding: 10px;
+		padding: 0.6250rem; 	
+		border-top: 1px solid #99B9AB;	/*icyriver*/
+		font-size: 1.2em;
+		color: #FFFFFF;	/*white*/
+		background-color: #76A690;	/*river*/
+		text-decoration: none;
+	}
+	
+	#nav-tog-main li a:hover,
+	#nav-tog-main li a:focus {
+		color: #3B5348;	/*forest*/ 
+		background-color: #FFFFFF;	/*white*/
+		text-decoration: none;
+	}
+		
+	.menu-button {
+		text-align: right;
+		float: right;
+		text-decoration: none;
+		font-weight: bold;
+	}
+	
+	a.menu-button:link,
+	a.menu-button:visited {
+		color: #99B9AB;	/*icyriver*/
+	}
+	
+	a.menu-button:hover,
+	a.menu-button:focus {
+		color: #FFFFFF;	/*white*/
+		text-decoration: none;
+	}
+/* END RESPONSIVE TOGGLE MAIN MENU */
+	
+	#nav-social {
+		width: 150px;
+		float: left;
+	}
+
+	#nav-social li {
+		text-align: left;
+	}
+
+	h1.logo {
+		display: block;
+		clear: both;
+		margin-top: 2.5em;
+	}
+
+	.menu {
+		width: 100%;
+		float: none;
+		margin: 0px auto;
+	}
+	
+	.menu ul {
+		display: none;
+	}
+
+	.menu h1 {
+		padding: 0px;
+	}
+	
+	img.logo {
+		width: 220px; /* fixed size */
+		display: block;
+		clear: both;
+		float: none;
+		margin: 0px auto;
+	}
+	
+	img#logo-lrg {
+		padding: 0px 20px;
+		padding: 0 1.25rem;
+	}
+	
+	#nav-sub li {
+		margin: 0 auto;
+	}
+					
+	#nav-sub li.one-two {
+		float: left;
+		width: 45%;
+	}
+	
+	#nav-sub li.two-two {
+		float: right;
+		width: 45%;
+	}
+	
+	#nav-sub li.one-three {
+		float: left;
+		margin-right: 5%;
+		width: 30%;
+	}
+	
+	#nav-sub li.two-three {
+		float: left;
+		width: 30%;
+	}
+
+	#nav-sub li.three-three {
+		float: right;
+		width: 30%;
+	}
+	
+	#nav-home {
+		margin: 0 auto;
+	}
+	
+	#nav-home ul {
+		padding: 0;
+	}
+	
+	#nav-home li {
+		width: 100%;
+		padding: 10px;
+		padding: .625em 1.25rem;
+		margin-top: 1.25em;
+	}
+	
+	#nav-home li:last-of-type {
+		margin-bottom: 2.5em;
+	}
+	
+	footer {
+		opacity: 1;
+	}
+		
+}					/* END PHONE */
