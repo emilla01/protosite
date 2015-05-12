@@ -315,7 +315,9 @@ footer a:focus {
 .menu a:hover,
 .menu a:focus,
 .menu li.current_page_item a:link,
-.menu li.current_page_item a:visited {
+.menu li.current_page_item a:visited,
+#nav-sub li.current_page_item a:link,
+#nav-sub li.current_page_item a:visited {
 	color: #FFFFFF;	/*white*/
 	text-decoration: none;
 }
