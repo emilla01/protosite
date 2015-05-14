@@ -289,7 +289,7 @@ footer a:focus {
 .menu li {
 	float:left;	
 	line-height: 2.5em; /*same height as #nav-main*/
-	width: 25%;  /*100 / number of list items*/
+	width: 20%;  /*100 / number of list items*/
 	margin: 0;
 	list-style-type: none;
 	font-family: cabinbold, Optima, Tahoma, Geneva, 'droid sans', sans-serif;
@@ -322,9 +322,18 @@ footer a:focus {
 	text-decoration: none;
 }
 
-.children {
+.sub-menu {
 	display: none;
 }
+
+.sub-menu li {
+	clear: both;
+}
+
+.menu-item-has-children:hover .sub-menu {
+	display: block;
+}
+
 	/*END NAV-MAIN*/
 
 	/*NAV-HOME*/
@@ -333,8 +342,13 @@ footer a:focus {
 	width: 980px;  /* fallback */
 	width: 100%;
 	float: right;
+	clear: both;
 	margin-top: 20px; /* fallback */
 	margin-top: 1.25em; /* 20 / 16 = ems */
+}
+
+#nav-home .menu {
+	width: 100%;
 }
 
 #nav-home ul {
@@ -345,7 +359,7 @@ footer a:focus {
 
 #nav-home li {
 	float:left;	
-	width: 25%;  /*100 / number of list items*/
+	width: 20%;  /*100 / number of list items*/
 	margin: 0;
 	padding: 0 20px;
 	padding: 0 1.25rem;
@@ -355,6 +369,16 @@ footer a:focus {
 
 #nav-home a {
 	display: block;  /*allows user to select box for link instead of just a text*/
+}
+
+#nav-home .menu a:link,
+#nav-home .menu a:visited {
+	color: #FFFFFF;	/*white*/
+}
+
+#nav-home .menu a:hover,
+#nav-home .menu a:focus {
+	color: #99B9AB;	/*icyriver*/
 }
 
 	/*END NAV-HOME*/

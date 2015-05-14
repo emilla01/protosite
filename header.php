@@ -99,14 +99,19 @@
 			</nav>  <!-- end nav-tog-main -->
 					
 		<h1 class="logo">
-			<a href="../wordpress/">
+			<a href="../">
 				<span>Cascade Meadows Camp</span>
 				<img src="<?php bloginfo('template_directory'); ?>/images/logo.png" alt="Cascade Meadows Logo" class="logo"/>
 			</a>
 		</h1>
 	
 			<!-- begin nav-main -->
-			<?php wp_nav_menu(array('theme_location' => 'main-menu', 'container' => 'div', 'container_id' => 'nav-main', 'items_wrap' => '<ul id="navigation-items" class="%2$s">%3$s</ul>',)); ?>
+			<?php wp_nav_menu(array(
+				'theme_location' => 'main-menu', 
+				'container' => 'div', 
+				'container_id' => 'nav-main', 
+				'items_wrap' => '<ul id="navigation-items" class="%2$s">%3$s</ul>',
+			)); ?>
 			<!-- end nav-main -->
 
 	</header>  <!-- end header -->
