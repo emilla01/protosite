@@ -120,7 +120,36 @@
 	</header>  <!-- end header -->
 
   <div id="middle">  <!-- begin middle -->		 
-		 
+		 <!-- begin widgets -->
+		 <div id="widgets">
+		 	<section class="widget-item">
+				<h2>About the Camp:</h2>
+					<?php if(have_posts()) : while(have_posts()) : the_post(); //start loop one ?>
+					<?php the_content(''); //get the home page's content ?>
+					<?php endwhile; endif; //end loop one ?>
+			</section>
+			<section class="widget-item">
+				<h2>Camp Updates</h2>
+					<ul>
+						<?php rewind_posts(); //stop loop one ?>
+						<?php query_posts('showposts=4'); //give directinos to loop two ?>
+						<?php while(have_posts()) : the_post(); //start loop two ?>
+						<li>
+							<a href="<?php the_permalink(); ?>"><?php the_title();?></a>
+						</li>
+						<?php endwhile; //end loop two ?>
+					</ul>
+			</section>		
+			<section>
+				<h2>Contact Us:</h2>
+				<p>
+					<strong>Phone: </strong><a href="#">999.123.4567</a><br>
+					<strong>Email: </strong><a href="#">email@email.com</a>
+				</p>
+				<p>123 Camp Road<br>Leavenworth, WA 98012</p>
+			</section> 
+		 </div>
+		 <!-- end widgets -->
   </div>  <!-- end middle -->
 
 <?php get_footer(); ?>
