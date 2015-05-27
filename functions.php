@@ -23,4 +23,7 @@ register_nav_menus(array(
 	'home-menu' =>__('Home'),
 ));
 
+//Create Post Thumbnails
+add_theme_support('post-thumbnails');
+
 ?>

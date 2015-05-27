@@ -280,10 +280,7 @@ footer a:focus {
 
 .menu ul {
 	margin: 0;	
-	padding: 0 40px; /* fallback */
-	padding: 0 2.5rem;
 	overflow: hidden;
-	border-top: 3px solid #76A690;	/*river*/
 }
 
 .menu li {
@@ -324,10 +321,20 @@ footer a:focus {
 
 .sub-menu {
 	display: none;
+	position: absolute;
+	background-color: #E3D5B5;	/*parchment*/
+	border-top: solid 1px #FFFFFF;	/*white*/
 }
 
 .sub-menu li {
 	clear: both;
+	font-size: 16px;
+	font-size: 1em;
+	font-family: cabinregular, Optima, Tahoma, Geneva, 'droid sans', sans-serif;
+	width: 100%;
+	padding: 0 10px;
+	padding: 0 .625em;
+	border-bottom: solid 1px #FFFFFF;	/*white*/
 }
 
 .menu-item-has-children:hover .sub-menu {
@@ -353,17 +360,13 @@ footer a:focus {
 
 #nav-home ul {
 	margin: 0;	
-	padding: 0 40px;
-	padding: 0 2.5rem;
 }
 
 #nav-home li {
 	float:left;	
-	width: 20%;  /*100 / number of list items*/
 	margin: 0;
-	padding: 0 20px;
-	padding: 0 1.25rem;
-	text-align: center;
+	padding: 0 10px;
+	padding: 0 0.625rem;
 	list-style-type: none;
 }
 
@@ -539,6 +542,25 @@ img + h2 {
 	clear: both;		/* for content, not layout */
 }
 
+/* begin post thumbnails */
+#content img.wp-post-image {}
+
+#content img.attachment-thumbnail {
+	float: left;
+	margin: 4px 20px 0 0;
+	margin: .25em 1.25rem 0 0;
+}
+
+#content img.attachment-medium {}
+
+#content img.attachment-large {}
+
+#content img.attachment-full {}
+
+
+
+/* end post thumbnails */
+
 /*END IMAGES*/
 
 
@@ -567,6 +589,22 @@ h1 span{
 	overflow: hidden;
 	padding: 0px 40px 20px 40px; /* fallback; 940px - 80px side padding = 860px */
 	padding: 0 2.5rem 1.25em 2.5rem; /* 40 / 16 = rems */
+}
+
+#content article.post-excerpt {
+	overflow: hidden;
+	margin-bottom: 20px;
+	margin-bottom: 1.25em;
+}
+
+#content article.post-excerpt p {
+	display: inline;
+}
+
+#content small {
+	display: block;
+	margin-bottom: 10px;
+	margin-bottom: 0.625em;
 }
 
 #widgets {
