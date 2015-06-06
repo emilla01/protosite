@@ -21,5 +21,17 @@
 				
       </div>   <!-- end nav-sub -->
 			
+			<!-- begin Quote custom field -->
+			<?php if(get_post_meta($post->ID, 'Quote', true)): //check to see if there is a quote ?>
+			
+			<blockquote><?php echo get_post_meta($post->ID, 'Quote', true); //write out quote ?></blockquote>
+			
+			<?php endif; ?>
+			<!-- end Quote custom field -->
+			
+			<!-- begin dynamic sidebar -->
+			<?php dynamic_sidebar(1); //call widgets ?>
+			<!-- end dynamic sidebar -->
+			
     </aside>  <!-- end aside primary -->
   </div> <!-- end middle -->
